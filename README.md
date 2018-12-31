@@ -10,3 +10,6 @@ render returns a React element, which is a lightweight description of what to re
 You can put any JavaScript expressions within braces inside JSX. Each React element is a JavaScript object that you can store in a variable or pass around in your program.
 
 React components can have state by setting this.state in their constructors. this.state should be considered as private to a React component that it’s defined in.
+
+To collect data from multiple children, or to have two child components communicate with each other, you need to declare the shared state in their parent component instead.
+The parent component can pass the state back down to the children by using props; this keeps the child components in sync with each other and with the parent component.
